@@ -1,0 +1,4 @@
+- Made login and signup component
+- Setup all the routes in app using react-router
+- call login and signup api to get the user info from server
+- Installed cors package in backend and using withCredentials allowing user to send request

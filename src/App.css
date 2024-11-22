@@ -1,0 +1,266 @@
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-section {
+  display: flex;
+}
+
+.login-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the login form horizontally */
+  justify-content: center; /* Center the login form vertically */
+  margin-top: 50px;
+}
+
+.login-section-topInfo {
+  text-align: center;
+}
+
+.order-img {
+  /* Add styles for your logo image if needed */
+  width: 100px;
+}
+
+.form-section {
+  /* Add styles for your form elements like spacing, etc. */
+}
+
+.form-field {
+  margin-bottom: 15px; 
+}
+
+.form-field label {
+  display: block; /* Makes the label appear on its own line */
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-field input {
+  width: 100%; 
+  padding: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  box-sizing: border-box; 
+}
+
+.sign-in-button {
+  background-color: #ff6f00; /* Orange color */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+  width: 100%;
+}
+
+.image {
+  margin-top: 10px;
+  width: 50%;
+  overflow: hidden; /* Add this line */
+}
+
+.image img {
+  max-width: 95%; /* Use max-width instead of width */
+  height: 100%;
+  border-radius: 5px;
+}
+
+.footer {
+  background-color: #231414; /* Light gray background */
+  padding: 30px 20px; /* Add padding */
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around; 
+  margin-top: 50px;
+}
+
+.footer-section {
+  text-align: center; /* Center text within each section */
+  background-color: rgb(186, 184, 184);
+}
+.footer-section img{
+  width: 100px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px; 
+}
+
+.app-buttons {
+  margin-bottom: 15px;
+}
+
+.app-buttons img {
+  /* Style app store buttons */
+}
+
+.small-text {
+  font-size: 0.8em;
+  color: #777; /* Slightly darker gray for smaller text */
+}
+
+.social-icons img {
+  /* Style social icons */
+}
+
+.footer-section ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 5px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  text-align: center;
+  background-color: #535387;
+}
+
+.bottom-links {
+  margin-top: 10px;
+}
+
+.bottom-links a {
+  margin: 0 5px; /* Add space between links */
+}
+.form-hyperLink {
+  color: orange;
+  text-decoration: none;
+  cursor: pointer;
+}
+.form-error {
+  color: red;
+  font: bold;
+}
+
+/* Header component */
+.header-container {
+  background-color:#f2f5f2; /* Green background */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  width: 87%;
+}
+.promo-label {
+  color: #ff6f00;
+  padding: 10px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center; 
+}
+
+.promo {
+  padding: 5px 10px;
+  margin-right: 20px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.location-icon {
+  margin-right: 5px;
+}
+
+.change-location {
+  color: #007bff; /* Blue color for link */
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  background-color:green;
+  padding: 10px;
+  width: 200px;
+}
+.mycart-text {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cart-button {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.cart-icon {
+  margin-right: 5px;
+}
+
+.user-icon {
+  background-color: white;
+  border-radius: 50%; /* Make it circular */
+  padding: 8px;
+}
+.navbar {
+  background-color:   
+white; 
+  height: 61px; /* Fixed height */
+  padding: 15px 20px; /* Add padding */
+  display: flex;
+  justify-content: space-between; /* Align items to both ends */
+  align-items: center; /* Vertically center items */
+}
+
+.logo {
+  font-family: 'Arial Black', sans-serif; /* Or a similar bold font */
+  font-size: 2em;
+  color: #231414; /* Dark color */
+  margin-right: 30px; /* Add space to the right */
+}
+
+.logo span {
+  color: #ff6f00; /* Orange color for the 'er' */
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-items a {
+  color: #333; /* Dark gray color for nav links */
+  text-decoration: none;
+  margin: 0 15px; /* Space between nav items */
+  font-weight: bold;
+}
+
+.nav-items .active {
+  background-color: #ff6f00; /* Orange background for active link */
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+.login-signup {
+  background-color: #000; /* Black background */
+  color: #ffc107; /* Gold color */
+  padding: 8px 15px;
+  border-radius: 20px; 
+  display: flex;
+  align-items: center;
+}
+
+.login-signup .login-icon {
+  margin-right: 5px;
+}
+.header-logo {
+  width: 100px;
+  margin-left: 75px;
+}
