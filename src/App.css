@@ -264,3 +264,198 @@ white;
   width: 100px;
   margin-left: 75px;
 }
+
+/*Home*/
+.banner-container {
+  display: flex;
+  background-color: rgb(243, 240, 240);
+  width: 90%;
+  margin-left: 83px;
+  padding: 10px;
+  border-radius: 5px;
+  height: 277px;
+}
+.image-layout {
+  position: relative; /* To position the notification bars */
+  width: 805px; /* Adjust as needed */
+  height: 537px; /* Adjust as needed */
+}
+
+.top-image {
+  width: 25%;
+  height: 48%;
+  object-fit: cover; 
+}
+
+.bottom-image {
+  width: 300px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  position: absolute;
+  bottom: 284px; /* Adjust distance from bottom */
+  left: 44%;
+  transform: translateX(-50%); /* Center horizontally */
+  object-fit: cover;
+  border-radius: 10px;
+}
+h1 .fast-and-fresh-text {
+  display: block;
+}
+.left-text-section {
+  width: 35%;
+  padding: 20px;
+}
+.notifcation-banner{
+  width: 40px;
+}
+.navbar {
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.nav-links a.active {
+  color: #ff6f00; /* Orange color for active link */
+}
+
+/* Title and Subtitle */
+.title-subtitle {
+  text-align: center;
+  margin-top: 20px;
+}
+.navTitle-container {
+  display: flex;
+  justify-content: space-between; /* Align items to both ends */
+  align-items: center; /* Vertically center items */
+  padding: 20px; 
+}
+
+.navbar {
+  background-color: transparent; /* No background for navbar */
+  padding: 0; /* Remove padding from navbar */
+}
+
+.title-subtitle {
+  text-align: left; /* Align title to the left */
+  margin-top: 0; /* Remove top margin */
+}
+
+.title {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-left: 54px;
+}
+
+.subtitle {
+  color: #ff6f00; /* Orange color for subtitle */
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: calc(23.33% - 0px); /* Equal width with spacing */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden; /* Hide overflowing image corners */
+  margin-left: 40px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Adjust as needed */
+  object-fit: cover;
+  z-index: 1;
+}
+
+.card-content {
+  padding: 15px;
+  position: absolute; /* Position the content absolutely */
+  z-index: 2;
+  margin: 98px 73px;
+}
+
+.discount {
+  background-color: #0e0d0c;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.restaurant-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.category-container {
+  display: flex;
+  justify-content: space-around; /* Distribute cards evenly */
+  margin-top: 30px; /* Space above the container */
+  margin: 30px 166px;
+}
+
+.category-card {
+  width: calc(16.66% - 20px); /* Equal width with spacing */
+  text-align: center;
+}
+
+.category-card img {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.category-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.restaurant-count {
+  font-size: 0.9em;
+  color: #ff6f00; /* Orange color */
+}
+
+.restaurant-card {
+  width: 200px; /* Adjust width as needed */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden; /* Hide overflowing image corners */
+  width: 166px;
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 150px; /* Adjust height as needed */
+  object-fit: cover; /* Ensure image covers the area */
+}
+
+.card-name {
+  background-color: #ff6f00; /* Orange background */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.resList-Container {
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.resList-Container .restaurant-card{
+  cursor: pointer;
+}

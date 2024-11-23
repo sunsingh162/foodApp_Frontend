@@ -3,6 +3,8 @@ import Footer from "./Footer";
 import { BASE_URL } from "../utils/constants";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addUser } from "../utils/userSlice";
 
 const Login = () => {
   const [isLoginForm, setIsLoginForm] = useState(true);
@@ -12,6 +14,7 @@ const Login = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const dispatch = useDispatch()
 
   const toggleForm = () => {
     setError("");
@@ -30,6 +33,7 @@ const Login = () => {
         { withCredentials: true }
       );
       console.log(res);
+      dispatch(addUser(res.data.data))
       navigate("/home");
     } catch (err) {
       setError(err?.response?.data);
@@ -50,6 +54,7 @@ const Login = () => {
         { withCredentials: true }
       );
       console.log(res);
+      dispatch(addUser(res.data.data))
       setIsLoginForm(true);
     } catch (err) {
       setError(err?.response?.data);
@@ -149,7 +154,6 @@ const Login = () => {
           />
         </div>
       </div>
-      {/* <Footer /> */}
     </div>
   );
 };
