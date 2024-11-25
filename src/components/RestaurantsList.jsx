@@ -21,9 +21,9 @@ const RestaurantsList = () => {
   return (
     <div className="resList-Container">
       {restaurants.map((res) => (
-        <Link to="/product">
-          <div key={res._id} className="restaurant-card">
-            <img src={res.image} alt="McDonald's" />
+        <Link to={"/getRes/" + res._id} key={res._id}>
+          <div className="restaurant-card">
+            <img src={res.image} alt="res" />
             <div className="card-name">{res.name}</div>
           </div>
         </Link>

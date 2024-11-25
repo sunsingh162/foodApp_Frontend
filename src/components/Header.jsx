@@ -35,7 +35,7 @@ const Header = () => {
           />
         </div>
         <div className="nav-items">
-          <a href="#" className="active">
+          <a href="/home" className="active">
             Home
           </a>
           <a href="#" className="active">
