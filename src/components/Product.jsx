@@ -8,21 +8,24 @@ import ProductLists from "./ProductLists";
 
 const Product = () => {
   const dispatch = useDispatch();
-  const { _id } = useParams();
+  const { restaurantId } = useParams();
   const restaurants = useSelector((store) => store.restaurant);
 
   useEffect(() => {
-    const fetchRestaurants = async () => {
-      const res = await axios.get(BASE_URL + "/getRes", {
-        withCredentials: true,
-      });
-      dispatch(addRestaurant(res.data));
+    const fetchRestaurant = async () => {
+      try {
+        const res = await axios.get(BASE_URL + "/getRes/" + restaurantId, {
+          withCredentials: true,
+        });
+        dispatch(addRestaurant(res.data));
+      } catch (error) {
+        console.error("Error fetching restaurant:", error);
+      }
     };
+    fetchRestaurant();
+  }, [restaurantId]);
 
-    fetchRestaurants();
-  }, []);
-
-  const restaurant = restaurants.find((res) => res._id === _id);
+  const restaurant = restaurants[0];
   return (
     restaurant && (
       <div>
@@ -53,30 +56,52 @@ const Product = () => {
           <div className="open-until">&#128337; Open until 3:00 AM</div>
         </div>
 
-        <div class="container">
-        <h1>All Offers from McDonald's East London</h1>
-        <div class="search-container">
-            <input type="text" placeholder="Search from menu..."/>
+        <div className="container">
+          <h1>All Offers from McDonald's East London</h1>
+          <div className="search-container">
+            <input type="text" placeholder="Search from menu..." />
+          </div>
         </div>
-    </div>
 
-    <div class="nav">
-        <ul>
-            <li><a href="#">Offers</a></li>
-            <li><a href="#">Burgers</a></li>
-            <li><a href="#">Fries</a></li>
-            <li><a href="#">Snacks</a></li>
-            <li><a href="#">Salads</a></li>
-            <li><a href="#">Cold drinks</a></li>
-            <li><a href="#">Happy Meal™</a></li>
-            <li><a href="#">Desserts</a></li>
-            <li><a href="#">Hot drinks</a></li>
-            <li><a href="#">Sauces</a></li>
-            <li><a href="#">Orbit®</a></li>
-        </ul>
-    </div>
+        <div className="nav">
+          <ul>
+            <li>
+              <a href="#">Offers</a>
+            </li>
+            <li>
+              <a href="#">Burgers</a>
+            </li>
+            <li>
+              <a href="#">Fries</a>
+            </li>
+            <li>
+              <a href="#">Snacks</a>
+            </li>
+            <li>
+              <a href="#">Salads</a>
+            </li>
+            <li>
+              <a href="#">Cold drinks</a>
+            </li>
+            <li>
+              <a href="#">Happy Meal™</a>
+            </li>
+            <li>
+              <a href="#">Desserts</a>
+            </li>
+            <li>
+              <a href="#">Hot drinks</a>
+            </li>
+            <li>
+              <a href="#">Sauces</a>
+            </li>
+            <li>
+              <a href="#">Orbit®</a>
+            </li>
+          </ul>
+        </div>
 
-    <ProductLists />
+        <ProductLists data={restaurant}/>
       </div>
     )
   );

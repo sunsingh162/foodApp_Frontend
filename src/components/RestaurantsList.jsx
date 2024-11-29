@@ -16,12 +16,11 @@ const RestaurantsList = () => {
       withCredentials: true,
     });
     dispatch(addRestaurant(res.data));
-    console.log(res.data[0]);
   };
   return (
     <div className="resList-Container">
       {restaurants.map((res) => (
-        <Link to={"/getRes/" + res._id} key={res._id}>
+        <Link to={"/getRes/" + res.restaurantId} key={res._id}>
           <div className="restaurant-card">
             <img src={res.image} alt="res" />
             <div className="card-name">{res.name}</div>

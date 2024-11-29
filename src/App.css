@@ -277,8 +277,8 @@ white;
 }
 .image-layout {
   position: relative; /* To position the notification bars */
-  width: 805px; /* Adjust as needed */
-  height: 537px; /* Adjust as needed */
+  width: 805px; 
+  height: 537px; 
 }
 
 .top-image {
@@ -288,8 +288,8 @@ white;
 }
 
 .bottom-image {
-  width: 300px; /* Adjust as needed */
-  height: 200px; /* Adjust as needed */
+  width: 300px; 
+  height: 200px; 
   position: absolute;
   bottom: 284px; /* Adjust distance from bottom */
   left: 44%;
@@ -375,7 +375,7 @@ h1 .fast-and-fresh-text {
 
 .card img {
   width: 100%;
-  height: 200px; /* Adjust as needed */
+  height: 200px; 
   object-fit: cover;
   z-index: 1;
 }
@@ -413,8 +413,8 @@ h1 .fast-and-fresh-text {
 }
 
 .category-card img {
-  width: 100px; /* Adjust as needed */
-  height: 100px; /* Adjust as needed */
+  width: 100px; 
+  height: 100px; 
   object-fit: cover;
   border-radius: 10px;
 }
@@ -426,21 +426,21 @@ h1 .fast-and-fresh-text {
 
 .restaurant-count {
   font-size: 0.9em;
-  color: #ff6f00; /* Orange color */
+  color: #ff6f00;
 }
 
 .restaurant-card {
-  width: 200px; /* Adjust width as needed */
+  width: 200px;
   border: 1px solid #ddd;
   border-radius: 10px;
-  overflow: hidden; /* Hide overflowing image corners */
+  overflow: hidden;
   width: 166px;
 }
 
 .restaurant-card img {
   width: 100%;
-  height: 150px; /* Adjust height as needed */
-  object-fit: cover; /* Ensure image covers the area */
+  height: 150px;
+  object-fit: cover;
 }
 
 .card-name {
@@ -546,7 +546,8 @@ h1 .fast-and-fresh-text {
 
 h1 {
   font-size: 24px;
-  margin: 0; /* Remove default margin */
+  margin: 0;
+  margin-left: 100px;
 }
 
 .search-container {
@@ -584,5 +585,103 @@ h1 {
 none; 
   color: white; 
   font-weight: bold; 
+}
+
+.prodpage-card-container {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.prod-page-card {
+  width: 300px;
+  height: 200px;
+  margin-top: 30px; 
+  margin-left: 100px; 
+  border-radius: 12px 0px 0px 0px;
+  opacity: 1; /* I'm assuming you want the card to be visible */
+  background: linear-gradient(245.7deg, rgba(255, 255, 255, 0) 0.94%, rgba(3, 8, 31, 0.19) 51.68%, rgba(3, 8, 31, 0.89) 87.9%); 
+  /* Add any additional styles for content inside the card here */
+  position: relative; /* To position elements inside */
+}
+
+/* Example styles for content */
+.prod-page-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px 0px 0px 0px; /* Match the card's border-radius */
+}
+
+.card-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 20px;
+}
+.res-item-card-container {
+  width: 400px;
+  height: 200px;
+  margin-top: 20px; /* Adjust as needed */
+  margin-left: 100px;
+  border: 1px solid #0000001A; 
+  opacity: 1;
+}
+.item-categories-container {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.card-content {
+  padding: 20px; /* Add padding for the content */
+}
+
+.item-details {
+  width: 43%;
+  margin: 20px 0;
+}
+
+.item-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.item-description {
+  font-size: 14px;
+  margin-bottom: 25px;
+  width: 200px;
+}
+
+.item-price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.item-image {
+  width: 50%;
+  position: relative;
+  margin-top: 0px;
+  margin-left: 210px;
+}
+
+.item-image img {
+  width: 150px;
+  height: 165px;
+  object-fit: cover; 
+}
+
+.plus-button {
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  background-color: #007bff; /* Blue background for plus button */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
 }
 
